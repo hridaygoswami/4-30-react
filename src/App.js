@@ -1,11 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
-import Nav from './Mycomponents/Nav'
-
+import Display from './Mycomponents/Display'
 function App() {
+  // let fname = document.getElementById("input").value;
+  // console.log(fname);
+  let age = Number(prompt("Enter your age: "))
   return (
     <>
-      <Nav/>
+      {/* <input type="text" id="input"/> */}
+      <Display age={age}/>
     </>
   );
 }
